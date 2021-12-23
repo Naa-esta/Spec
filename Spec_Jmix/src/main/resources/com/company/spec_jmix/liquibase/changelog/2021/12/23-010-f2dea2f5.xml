@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="Esta">
+        <createTable tableName="ESTA_PROJECT">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_ESTA_PROJECT"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="Esta">
+        <createTable tableName="ESTA_PROJECT1">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_ESTA_PROJECT1"/>
+            </column>
+            <column name="NAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="START_DATE" type="DATE"/>
+            <column name="END_DATE" type="DATE"/>
+            <column name="MANAGER_ID" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="3" author="Esta">
+        <createTable tableName="ESTA_TASK">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_ESTA_TASK"/>
+            </column>
+            <column name="NAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ASSIGNEE_ID" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+            <column name="START_DATE" type="DATETIME"/>
+            <column name="ESTIMATED_EFFORTS" type="INT"/>
+            <column name="PROJECT1_ID" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="4" author="Esta">
+        <addForeignKeyConstraint baseColumnNames="MANAGER_ID" baseTableName="ESTA_PROJECT1"
+                                 constraintName="FK_ESTA_PROJECT1_ON_MANAGER" referencedColumnNames="ID"
+                                 referencedTableName="ESTA_USER"/>
+
+        <createIndex indexName="IDX_PROJECT1_MANAGER_ID" tableName="ESTA_PROJECT1">
+            <column name="MANAGER_ID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="5" author="Esta">
+        <addForeignKeyConstraint baseColumnNames="ASSIGNEE_ID" baseTableName="ESTA_TASK"
+                                 constraintName="FK_ESTA_TASK_ON_ASSIGNEE" referencedColumnNames="ID"
+                                 referencedTableName="ESTA_USER"/>
+
+        <createIndex indexName="IDX_TASK_ASSIGNEE_ID" tableName="ESTA_TASK">
+            <column name="ASSIGNEE_ID"/>
+        </createIndex>
+    </changeSet>
+    <changeSet id="6" author="Esta">
+        <addForeignKeyConstraint baseColumnNames="PROJECT1_ID" baseTableName="ESTA_TASK"
+                                 constraintName="FK_ESTA_TASK_ON_PROJECT1" referencedColumnNames="ID"
+                                 referencedTableName="ESTA_PROJECT1"/>
+    </changeSet>
+</databaseChangeLog>
