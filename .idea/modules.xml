@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Spec_Jmix.iml" filepath="$PROJECT_DIR$/.idea/Spec_Jmix.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main~2.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main~2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test~1.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test~2.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test~2.iml" />
     </modules>
   </component>
 </project>

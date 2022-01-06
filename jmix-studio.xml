@@ -56,6 +56,19 @@
           </option>
         </ModuleSettings>
       </entry>
+      <entry key="Spec_Jmix.Spec_Jmix.main~3">
+        <ModuleSettings>
+          <option name="dataStoreOptions">
+            <map>
+              <entry key="main">
+                <value>
+                  <DataStoreSettings />
+                </value>
+              </entry>
+            </map>
+          </option>
+        </ModuleSettings>
+      </entry>
     </moduleSettings>
   </component>
   <component name="VersionUpdateSettings">
