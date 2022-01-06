@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spec_Jmix.iml" filepath="$PROJECT_DIR$/.idea/Spec_Jmix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test~1.iml" filepath="$PROJECT_DIR$/.idea/modules/Spec_Jmix.Spec_Jmix.test~1.iml" />
+    </modules>
+  </component>
+</project>

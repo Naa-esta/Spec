@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Spec_Jmix.Spec_Jmix.main" target="15" />
+      <module name="Spec_Jmix.Spec_Jmix.main~1" target="15" />
+      <module name="Spec_Jmix.Spec_Jmix.test" target="15" />
+      <module name="Spec_Jmix.Spec_Jmix.test~1" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
